@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a class="button" href="../index.html" style="--color:#1297bf ;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                inicio
+            </a>
+            <a class="button" href="../pages/galeria.html" style="--color:#1297bf;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Galeria
+            </a>
+            <a class="button" href="../pages/contacto.html" style="--color:#1297bf;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Contacto
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>CONTACTAR</h1>
+            <div class="form">
+                <form method="POST" action="">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" maxlength="50" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ]{3,23}"
+                            title="Debe indicar su nombre correctamente" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-mobile-alt"></i>
+                        <label for="telefono">Teléfono</label>
+                        <input type="telf" name="telefono" maxlength="9" pattern="^[6789]\d{8}$"
+                            title="Debe indicar un telefono válido" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-at"></i>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" maxlength="100"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Debe indicar un correo válido"
+                            required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-pen"></i>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" rows="10" length="140" required></textarea>
+                    </div>
+
+                    <div class="btn-block">
+                        <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>ENVIAR</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=+5493413119143&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+            class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        <div class="footer">
+            <ul>
+                <li> Telefono: 341-3119143</li>
+                <li class="link"><a href="https://goo.gl/maps/qXguYXQf2peDoJDf9" target="_blank">Mosconi 3703 Rosario,
+                        Santa Fe, Argentina.</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
